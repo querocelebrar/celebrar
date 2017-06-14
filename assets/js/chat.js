@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             generateLeftMessage(++counter);
             Typed.new('#uniq-' + counter, {
-              strings: ["^500 Eu sou a XXXXXXX, ^500 sua robô assistente. ^500 E você? ^500 Como posso te chamar?"],
+              strings: ["^500 Eu sou a Celeste, ^500 sua robô assistente. ^500 E você? ^500 Como posso te chamar?"],
               typeSpeed: typingSpeed,
               showCursor: false,
               callback: function() {
