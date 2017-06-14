@@ -1,0 +1,45 @@
+#p-body{
+	padding-top: 100px;
+	margin-top: 1px;
+}
+
+.row{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	align-items: center;
+	height: 30%;
+	margin: 5%;
+}
+
+.text{
+	height: 200px;
+	width: 400px;
+	margin-left: 10%;
+}
+
+.text h2 {
+	font-size: 1.5em;
+	font-weight: 900;
+	color: rgba(255,146,4,1);
+}
+.text p {
+	 font-size: 1.2em;
+	 font-weight: 400;
+ }
+
+.title {
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	flex-direction: column;
+}
+
+.title h1{
+	font-size: 3em;
+}
+
+.title h3{
+	font-size: 1.6em;
+	font-weight: 400;
+}
