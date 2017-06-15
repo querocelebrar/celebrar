@@ -301,4 +301,8 @@ html {
   .slogan {
     font-size: 10vmax;
   }
+  
+  .chat-container {
+    padding-top: 65px !important;
+  }
 }
