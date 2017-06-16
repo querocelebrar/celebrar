@@ -420,7 +420,7 @@ $('#form-email').submit(function(event) {
 
               // Send email with all the conversation history to the admin
               $.ajax({
-                url: '//formspree.io/igoroctaviano@gmail.com',
+                url: '//formspree.io/sac.querocelebrar@gmail.com',
                 method: 'POST',
                 data: { mensagem: result },
                 dataType: 'json'
