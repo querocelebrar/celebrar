@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
   setTimeout(function() {
 
     // After some waiting scrolls to chat
-    $('body').animate({ scrollTop: $('#p-hero')[0].scrollHeight }, 800);
+    $('body').animate({ scrollTop: $('#p-hero')[0].scrollHeight }, 1200);
 
     generateLeftMessage(counter);
     Typed.new('#uniq-' + counter, {
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             generateLeftMessage(++counter);
             Typed.new('#uniq-' + counter, {
-              strings: ["^500 Eu sou a Celeste, ^500 sua robô assistente. ^500 E você? ^500 Como posso te chamar?"],
+              strings: ["^500 Eu sou a Nina, ^500 sua robô assistente. ^500 E você? ^500 Como posso te chamar?"],
               typeSpeed: typingSpeed,
               showCursor: false,
               callback: function() {
@@ -200,7 +200,7 @@ $('#form-reason').submit(function(event) {
 
       generateLeftMessage(++counter);
       Typed.new('#uniq-' + counter, {
-        strings: ["^500 Que dia você esta planejando para essa comemoração?"],
+        strings: ["^500 Qual a data você considera ideal para sua comemoração?"],
         typeSpeed: typingSpeed,
         showCursor: false,
         callback: function () {
@@ -238,7 +238,7 @@ $('#form-date').submit(function(event) {
 
   generateLeftMessage(++counter);
   Typed.new('#uniq-' + counter, {
-    strings: ["Hmmmm, ^500 temos " + days + " dias para a sua festa..."],
+    strings: ["Hmmmm, ^500 temos " + days + " dias até a data da sua festa..."],
     typeSpeed: typingSpeed,
     showCursor: false,
     callback: function () {
@@ -309,7 +309,8 @@ $('#form-amount').submit(function(event) {
 
       generateLeftMessage(++counter);
       Typed.new('#uniq-' + counter, {
-        strings: ["Quanto você ta disposto a gastar mensalmente para já ir acumulando e planejando a comemoração?"],
+
+        strings: ["Uma excelente forma de planejarmos tudo é estabelecer um valor mensal que você possa economizar e ir acumulando. ˆ500 Qual valor você imagina que consiga separar todo mês para sua festa?"],
         typeSpeed: typingSpeed,
         showCursor: false,
         callback: function () {
@@ -344,7 +345,7 @@ $('#form-money').submit(function(event) {
 
   generateLeftMessage(++counter);
   Typed.new('#uniq-' + counter, {
-    strings: ["Hmmmmm.... ^500 vou precisar de tempo para pensar em algumas sugestões! ^500 Vou te chamar daqui uns dias, ^500 pode ser? ^500 Qual seu email pessoal ou telefone? ^500 (Se quiser, pode me passar os dois...)"],
+    strings: ["Pronto, ^500 já tenho as informações iniciais que preciso. ˆ500 Agora vou precisar de tempo para pensar em algumas sugestões! ^500 Vou te chamar daqui uns dias, ^500 pode ser? ^500 Qual seu email pessoal ou telefone? ^500 (Se quiser, pode me passar os dois...)"],
     typeSpeed: typingSpeed,
     showCursor: false,
     callback: function () {
@@ -387,7 +388,8 @@ $('#form-email').submit(function(event) {
 
       generateLeftMessage(++counter);
       Typed.new('#uniq-' + counter, {
-        strings: ["Ahh, ^500 se quiser ir indicando seus amigos pelo facebook é só clicar aqui embaixo e compartilhar o link em sua BIO, ^500 eles vão saber que foi você quem indicou e eu também vou saber que são seus amigos...."],
+          
+        strings: ["Festa e noticia boa a gente conta para os amigos, né? ^500 Conte para eles que você já está organizando sua comemoração!!!, ^500 Compartilhe essa noticia em sua pagina do Facebook clicando no link abaixo."],
         typeSpeed: typingSpeed,
         showCursor: false,
         callback: function () {
@@ -447,7 +449,7 @@ function generateBreakableLeftMessage(counter) {
   chatRow.className='chat-row chat-row-left';
   chatName.className = 'chat-name';
   img.className = 'chat-name-icon rotate-30';
-  img.src = './assets/imgs/exclamation-mark.svg';
+  img.src = '../assets/imgs/exclamation-mark.svg';
   chatName.appendChild(img);
   chatMessage.className = 'chat-message breakable-string';
   chatMessage.id = "uniq-" + counter;
@@ -464,7 +466,7 @@ function generateLeftMessage(counter) {
   chatRow.className='chat-row chat-row-left';
   chatName.className = 'chat-name';
   img.className = 'chat-name-icon rotate-30';
-  img.src = './assets/imgs/exclamation-mark.svg';
+  img.src = '../assets/imgs/exclamation-mark.svg';
   chatName.appendChild(img);
   chatMessage.className = 'chat-message';
   chatMessage.id = "uniq-" + counter;
