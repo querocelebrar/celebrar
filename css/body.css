@@ -8,20 +8,25 @@
 	justify-content: center;
 	flex-direction: row;
 	align-items: center;
-	height: 30%;
+	height: auto;
 	margin: 5%;
 }
 
 .text{
-	height: 200px;
 	width: 400px;
 	margin-left: 10%;
+}
+
+.text-no-image {
+	width: 80%;
+	margin: 2%;
 }
 
 .text h2 {
 	font-size: 1.5em;
 	font-weight: 900;
 	color: rgba(255,146,4,1);
+	text-transform: uppercase;
 }
 .text p {
 	 font-size: 1.2em;
