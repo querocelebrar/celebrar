@@ -1,4 +1,128 @@
 @import url("https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700,800");
 @import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900");
+#ComoFunciona {
+  height: 80vh;
+  width: 100%;
+  text-align: center; }
+  #ComoFunciona #ComoFuncionaHeader {
+    font-size: 2.5rem;
+    margin-top: -25px; }
+  #ComoFunciona #ComoFuncionaContainer #CardContainer {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-content: center;
+    padding: 0; }
+  #ComoFunciona #ComoFuncionaContainer h2 {
+    font-size: 2.5rem;
+    font-weight: 800; }
+  #ComoFunciona #ComoFuncionaContainer .card {
+    height: 300px;
+    width: 27%;
+    padding: 3%;
+    background: linear-gradient(to bottom, #ff6237 0%, #ff9204 100%); }
+    #ComoFunciona #ComoFuncionaContainer .card img {
+      fill: white !important; }
+    #ComoFunciona #ComoFuncionaContainer .card .card-title {
+      font-size: 1.8rem;
+      color: white;
+      text-transform: uppercase; }
+    #ComoFunciona #ComoFuncionaContainer .card p {
+      font-size: 1.2rem;
+      color: white; }
+
+#Comecando {
+  min-height: 100vh;
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  background-color: #d1d1d1; }
+  #Comecando #ComecandoContainer {
+    padding: 5%; }
+    #Comecando #ComecandoContainer #ComecandoHeader {
+      font-size: 2.5rem; }
+    #Comecando #ComecandoContainer #ComecandoCardContainer {
+      display: flex;
+      justify-content: space-between;
+      align-content: center; }
+      #Comecando #ComecandoContainer #ComecandoCardContainer .comecandoCard {
+        padding: 2%;
+        width: 45%;
+        background: white; }
+      #Comecando #ComecandoContainer #ComecandoCardContainer p {
+        text-align: left;
+        margin-bottom: 55px;
+        font-size: 1.2rem; }
+      #Comecando #ComecandoContainer #ComecandoCardContainer #ComecandoCollapse dl {
+        border-radius: 8px;
+        overflow: hidden; }
+      #Comecando #ComecandoContainer #ComecandoCardContainer #ComecandoCollapse dl dt {
+        background-color: transparent;
+        border-bottom: solid 1px rgba(0, 0, 0, 0.3);
+        border-top: solid 1px rgba(255, 255, 255, 0.1);
+        color: black;
+        cursor: pointer;
+        padding: 10px 10px 10px 30px;
+        position: relative; }
+      #Comecando #ComecandoContainer #ComecandoCardContainer #ComecandoCollapse dd {
+        background-color: transparent;
+        color: rgba(0, 0, 0, 0.8);
+        display: none;
+        border: solid 1px #e7e7e7;
+        margin: 0;
+        padding: 10px;
+        text-align: left; }
+      #Comecando #ComecandoContainer #ComecandoCardContainer #ComecandoCollapse .fechado::after, #Comecando #ComecandoContainer #ComecandoCardContainer #ComecandoCollapse .aberto::after {
+        content: "\25c2";
+        display: table;
+        font-size: 2em;
+        left: 2%;
+        line-height: 50px;
+        position: absolute;
+        text-shadow: 0 -1px #111;
+        top: -3px;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out; }
+      #Comecando #ComecandoContainer #ComecandoCardContainer #ComecandoCollapse .fechado::after {
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        transform: rotate(-90deg); }
+      #Comecando #ComecandoContainer #ComecandoCardContainer #ComecandoCollapse .aberto::after {
+        -webkit-transform: rotate(-180deg);
+        -moz-transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
+        -o-transform: rotate(-180deg);
+        transform: rotate(-180deg); }
+    #Comecando #ComecandoContainer #ComecandoFooter p {
+      margin-top: 100px; }
+
+#Planejando {
+  padding: 0;
+  margin: 0;
+  min-height: 90vh;
+  background: #7371FC; }
+
+#QuantoCusta {
+  padding: 0;
+  margin: 0;
+  min-height: 70vh;
+  background: #7371FC; }
+
+#Seguranca {
+  padding: 0;
+  margin: 0;
+  min-height: 60vh;
+  background: #EFFFFA; }
+
+#Footer {
+  min-height: 30vh;
+  display: flex;
+  justify-content: center;
+  background: black; }
 
 /*# sourceMappingURL=styles.css.map */
