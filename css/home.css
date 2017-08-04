@@ -135,7 +135,7 @@ body {
 }
 
 #talkButton{
-	background-color: rgba(255, 255, 255, .2);
+	background-color: #2E2D2A;
 	color: white;
 	font-size: 16px;
 	min-width: 190px;
@@ -159,6 +159,7 @@ body {
 	transform: scale(1.05);
 	box-shadow: 0 16px 32px rgba(0, 0, 0, .15);
 	opacity: 1;
+	transition: .2s cubic-bezier(.55,0,.1,1)
 }
 #talkButton:hover{
 	color: rgba(255, 98, 55, 1);
