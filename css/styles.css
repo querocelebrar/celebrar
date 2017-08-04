@@ -138,12 +138,16 @@
     padding: 0; }
     #QuantoCusta #QuantoCustaHeader h2 {
       font-size: 2.5em; }
-  #QuantoCusta #QuantoCustaContainer p {
-    font-size: 1.3em;
-    margin: 0; }
-  #QuantoCusta #QuantoCustaContainer h2 {
-    font-size: 2.5em;
-    color: #F44E3F; }
+  #QuantoCusta #QuantoCustaContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column; }
+    #QuantoCusta #QuantoCustaContainer p {
+      font-size: 1.3em;
+      margin: 0; }
+    #QuantoCusta #QuantoCustaContainer h2 {
+      font-size: 2.5em;
+      color: #F44E3F; }
 
 #Seguranca {
   padding: 0;

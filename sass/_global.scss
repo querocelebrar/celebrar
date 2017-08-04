@@ -217,6 +217,11 @@
 
     #QuantoCustaContainer {
 
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+
         p {
             font-size: 1.3em;
             margin: 0;
