@@ -37,7 +37,8 @@
   text-align: center;
   padding: 0;
   margin: 0;
-  background-color: #d1d1d1; }
+  background-color: #221E22;
+  color: white; }
   #Comecando #ComecandoContainer {
     padding: 5%; }
     #Comecando #ComecandoContainer #ComecandoHeader {
@@ -45,7 +46,8 @@
     #Comecando #ComecandoContainer #ComecandoCardContainer {
       display: flex;
       justify-content: space-between;
-      align-content: center; }
+      align-content: center;
+      color: #221E22; }
       #Comecando #ComecandoContainer #ComecandoCardContainer .comecandoCard {
         padding: 2%;
         width: 45%;
@@ -105,7 +107,7 @@
   padding: 0;
   margin: 0;
   min-height: 90vh;
-  background: #7371FC; }
+  background: #F44E3F; }
   #Planejando #PlanejandoHeader {
     text-align: center;
     margin: 0px;
@@ -120,7 +122,8 @@
     #Planejando #PlanejandoContainer p {
       text-align: center;
       font-size: 1.3em;
-      margin: 0; }
+      margin: 0;
+      margin-bottom: 50px; }
     #Planejando #PlanejandoContainer h3 {
       font-size: 2em;
       color: white; }
@@ -129,13 +132,23 @@
   padding: 0;
   margin: 0;
   min-height: 70vh;
-  background: #7371FC; }
+  text-align: center; }
+  #QuantoCusta #QuantoCustaHeader {
+    margin: 0;
+    padding: 0; }
+    #QuantoCusta #QuantoCustaHeader h2 {
+      font-size: 2.5em; }
+  #QuantoCusta #QuantoCustaContainer p {
+    font-size: 1.3em;
+    margin: 0; }
+  #QuantoCusta #QuantoCustaContainer h2 {
+    font-size: 2.5em;
+    color: #F44E3F; }
 
 #Seguranca {
   padding: 0;
   margin: 0;
-  min-height: 60vh;
-  background: #EFFFFA; }
+  min-height: 60vh; }
 
 #Footer {
   min-height: 30vh;

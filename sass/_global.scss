@@ -61,7 +61,8 @@
     padding: 0;
     margin: 0;
 
-    background-color: #d1d1d1;
+    background-color: #221E22;
+    color: white;
 
     #ComecandoContainer {
         padding: 5%;
@@ -74,6 +75,7 @@
             display: flex;
             justify-content: space-between;
             align-content: center;
+            color: #221E22;
 
             .comecandoCard{
                 padding: 2%;
@@ -186,6 +188,7 @@
             text-align: center;
             font-size: 1.3em;
             margin: 0;
+            margin-bottom: 50px;
         }
 
         h3 {
@@ -200,14 +203,37 @@
     padding: 0;
     margin: 0;
     min-height: 70vh;
-    background: $planejando-background;
+
+    text-align: center;
+
+    #QuantoCustaHeader {
+        margin: 0;
+        padding: 0;
+
+        h2 {
+            font-size: 2.5em;
+        }
+    }
+
+    #QuantoCustaContainer {
+
+        p {
+            font-size: 1.3em;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            color: $planejando-background;
+        }
+
+    }
 }
 
 #Seguranca{
     padding: 0;
     margin: 0;
     min-height: 60vh;
-    background: $seguranca-bg;
 
 }
 
