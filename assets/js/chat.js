@@ -136,7 +136,7 @@ $('#form-age').submit(function(event) {
 
       generateBreakableLeftMessage(++counter);
       Typed.new('#uniq-' + counter, {
-        strings: ["^500 Qual é o motivo da sua comemoração? ^500 \n Formatura ^500 \n Aniversario ^500 \n Confraternização ^500 \n Outros (Celebrando a vidaaaa!)"],
+        strings: ["^500 Qual é o motivo da sua comemoração? ^500 \n Formatura ^500 \n Aniversário ^500 \n Confraternização ^500 \n Outros (Celebrando a vidaaaa!)"],
         typeSpeed: typingSpeed,
         showCursor: false,
         callback: function () {
@@ -162,27 +162,25 @@ $('#form-reason').submit(function(event) {
   // Hide input bar and get the input value
   $('#input-bar').toggle();
 
-  var reason = $(this).serializeArray()[0].value,
-      upperReason = reason.toString().toUpperCase(),
-      message = "",
-      emoji = "";
-
-  if (upperReason === "FORMATURA") {
-    message = "OPAA, profissional novo na área?!! ";
-    emoji = "<i class='em em-mortar_board'></i>";
-  } else if (upperReason === "ANIVERSARIO" || upperReason === "ANIVERSÁRIO") {
-    message = "aaahaaa uhuuuuu o " + userName + " eu vou comer seu boloo!!!! kkkkkk ";
-    emoji = "<i class='em em-flushed'></i>";
-  } else if (upperReason === "CONFRATERNIZAÇAO" || upperReason === "CONFRATERNIZACAO") {
-    message = "Confraternização??? Não esque da sua assistente pessoal aqui ta??? ";
-    emoji = "<i class='em em-grimacing'></i>";
-  } else {
-    message = "Isso, vamos celebrar a VIDAA!!!! kkkkkk ";
-    emoji = "<i class='em em-smile'></i>";
-  }
+  var reason = document.getElementById("party-reason").selectedIndex,
+      messages = [
+        "OPAA, profissional novo na área?!!", 
+        "aaahaaa uhuuuuu o " + userName + " eu vou comer seu boloo!!!! kkkkkk", 
+        "Confraternização??? Não esque da sua assistente pessoal aqui ta???", 
+        "Isso, vamos celebrar a VIDAA!!!! kkkkkk"
+      ],
+      emojis = [
+        "<i class='em em-mortar_board'></i>",
+        "<i class='em em-flushed'></i>",
+        "<i class='em em-grimacing'></i>",
+        "<i class='em em-smile'></i>"
+      ],
+      reasons = ["Formatura", "Aniversário", "Confraternização", "Outros"],
+      message = messages[reason],
+      emoji = emojis[reason];
 
   generateRightMessage(++counter);
-  $('#uniq-' + counter).text(reason + '.');
+  $('#uniq-' + counter).text(reasons[reason] + '.');
 
   scrollScreen();
 

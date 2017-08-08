@@ -11,6 +11,7 @@
 		<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="../css/home.css">
 		<link rel="stylesheet" type="text/css" href="../css/chat.css">
+		<link rel="stylesheet" type="text/css" href="../css/dropdown.css">
 
 		<!-- Icons -->
 		<script src="https://use.fontawesome.com/4346e7bee0.js"></script>
@@ -28,112 +29,121 @@
 	</head>
 	<body>
 
-		<div id="p-hero" class="p-hero">
-			<div class="container">
-				<div id="first-header" class="header">
-					<p class="step-title">Passo 1</p>
-				</div>
-				<div class="container" id="hero-content">
-					<div id="hero">
-						<p class="slogan">Começando a<span class="blackColor"> festa...</span></p>
-					</div>
+	<div id="p-hero" class="p-hero">
+		<div class="container">
+			<div id="first-header" class="header">
+				<p class="step-title">Passo 1</p>
+			</div>
+			<div class="container" id="hero-content">
+				<div id="hero">
+					<p class="slogan">Começando a<span class="blackColor"> festa...</span></p>
 				</div>
 			</div>
-			<div class="arrow">
-				<a id="arrow" onclick="scrollDown()">
-					<i class="fa fa-angle-down" aria-hidden="true"></i>
+		</div>
+		<div class="arrow">
+			<a id="arrow" onclick="scrollDown()">
+				<i class="fa fa-angle-down" aria-hidden="true"></i>
+			</a>
+		</div>
+	</div>
+
+	<div id="fixed-header" class="header navbar-header">
+		<div class="flexbox-spacebetween">
+			<div class="navbar-text-left">
+				<a href="https://querocelebrar.com.br" class="link">
+					<img src="../assets/imgs/ico_down_arrow.svg" class="rotate-90 navbar-icon">
 				</a>
 			</div>
+			<div class="navbar-text-center">
+				<p class="navbar-text">COMEÇANDO A FESTA</p>
+			</div>
 		</div>
+	</div>
 
-		<div id="fixed-header" class="header navbar-header">
-			<div class="flexbox-spacebetween">
-				<div class="navbar-text-left">
-					<a href="https://querocelebrar.com.br" class="link">
-						<img src="../assets/imgs/ico_down_arrow.svg" class="rotate-90 navbar-icon">
-					</a>
-				</div>
-				<div class="navbar-text-center">
-					<p class="navbar-text">COMEÇANDO A FESTA</p>
+	<div id="p-body">
+		<div id="chat-container" class="chat-container">
+			<div id="terminal" class="chat">
+				<div id="input-bar" class="input-bar input-bar-fixed">
+					<form id="form-name">
+						<div class="input-bar-container">
+							<div class="input-bar-input-container">
+								<input id="input-name" name="name" class="input-bar-input" type="text" placeholder="digite seu nome" required />
+							</div>
+							<button type="submit" class="input-bar-button">Ok</button>
+						</div>
+					</form>
+					<form id="form-age">
+						<div class="input-bar-container">
+							<div class="input-bar-input-container">
+								<input id="input-age" name="age" class="input-bar-input" type="number" placeholder="digite sua idade" required />
+							</div>
+							<button type="submit" class="input-bar-button">Ok</button>
+						</div>
+					</form>
+					<form id="form-reason">
+						<div class="input-bar-container">
+							<div class="input-bar-input-container">
+
+								<span class="custom-dropdown">
+									<select id="party-reason" required>
+										<option>Formatura</option>
+										<option>Aniversário</option>  
+										<option>Confraternização</option>
+										<option>Outros</option>
+									</select>
+								</span>
+
+							</div>
+							<button type="submit" class="input-bar-button">Ok</button>
+						</div>
+					</form>
+					<form id="form-amount">
+						<div class="input-bar-container">
+							<div class="input-bar-input-container">
+								<input id="input-amount" name="amount" class="input-bar-input" type="number" placeholder="digite a quantidade" required />
+							</div>
+							<button type="submit" class="input-bar-button">Ok</button>
+						</div>
+					</form>
+					<form id="form-date">
+						<div class="input-bar-container">
+							<div class="input-bar-input-container">
+								<input id="input-date" name="date" class="input-bar-input" type="date" placeholder="digite a data" required />
+							</div>
+							<button type="submit" class="input-bar-button">Ok</button>
+						</div>
+					</form>
+					<form id="form-money">
+						<div class="input-bar-container">
+							<div class="input-bar-input-container">
+								<input id="input-money" name="amount" class="input-bar-input" type="number" placeholder="digite a quantidade" required />
+							</div>
+							<button type="submit" class="input-bar-button">Ok</button>
+						</div>
+					</form>
+					<form id="form-email">
+						<div class="input-bar-container">
+							<div class="input-bar-input-container">
+								<input id="input-email" name="email" class="input-bar-input" type="text" placeholder="digite seu email/tel" required />
+							</div>
+							<button type="submit" class="input-bar-button">Ok</button>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
+	</div>
 
-		<div id="p-body">
-			<div id="chat-container" class="chat-container">
-				<div id="terminal" class="chat">
-					<div id="input-bar" class="input-bar input-bar-fixed">
-						<form id="form-name">
-							<div class="input-bar-container">
-								<div class="input-bar-input-container">
-									<input id="input-name" name="name" class="input-bar-input" type="text" placeholder="digite seu nome" required />
-								</div>
-								<button type="submit" class="input-bar-button">Ok</button>
-							</div>
-						</form>
-						<form id="form-age">
-							<div class="input-bar-container">
-								<div class="input-bar-input-container">
-									<input id="input-age" name="age" class="input-bar-input" type="number" placeholder="digite sua idade" required />
-								</div>
-								<button type="submit" class="input-bar-button">Ok</button>
-							</div>
-						</form>
-						<form id="form-reason">
-							<div class="input-bar-container">
-								<div class="input-bar-input-container">
-									<input id="input-reason" name="reason" class="input-bar-input" type="text" placeholder="digite o motivo da festa" required />
-								</div>
-								<button type="submit" class="input-bar-button">Ok</button>
-							</div>
-						</form>
-						<form id="form-amount">
-							<div class="input-bar-container">
-								<div class="input-bar-input-container">
-									<input id="input-amount" name="amount" class="input-bar-input" type="number" placeholder="digite a quantidade" required />
-								</div>
-								<button type="submit" class="input-bar-button">Ok</button>
-							</div>
-						</form>
-						<form id="form-date">
-							<div class="input-bar-container">
-								<div class="input-bar-input-container">
-									<input id="input-date" name="date" class="input-bar-input" type="date" placeholder="digite a data" required />
-								</div>
-								<button type="submit" class="input-bar-button">Ok</button>
-							</div>
-						</form>
-						<form id="form-money">
-							<div class="input-bar-container">
-								<div class="input-bar-input-container">
-									<input id="input-money" name="amount" class="input-bar-input" type="number" placeholder="digite a quantidade" required />
-								</div>
-								<button type="submit" class="input-bar-button">Ok</button>
-							</div>
-						</form>
-						<form id="form-email">
-							<div class="input-bar-container">
-								<div class="input-bar-input-container">
-									<input id="input-email" name="email" class="input-bar-input" type="text" placeholder="digite seu email/tel" required />
-								</div>
-								<button type="submit" class="input-bar-button">Ok</button>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
+	<!-- Scripts -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+	<script src="https://use.fontawesome.com/305a99fd19.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../assets/js/home.js"></script>
 
-		<!-- Scripts -->
-		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
-		<script src="https://use.fontawesome.com/305a99fd19.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script type="text/javascript" src="../assets/js/home.js"></script>
-
-		<!-- Chat Scripts -->
-		<script src="../assets/js/typed.js" type="text/javascript"></script>
-		<script src="../assets/js/chat.js" type="text/javascript"></script>
+	<!-- Chat Scripts -->
+	<script src="../assets/js/typed.js" type="text/javascript"></script>
+	<script src="../assets/js/chat.js" type="text/javascript"></script>
 
 	</body>
 </html>
