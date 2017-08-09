@@ -306,3 +306,18 @@ html {
     padding-top: 65px !important;
   }
 }
+
+
+@media screen and (max-width: 320px) {
+  .chat-message {
+    white-space: pre-wrap;
+  }
+
+  .chat-row.chat-row-right {
+    padding-right: 30px;
+  }
+
+  form input {
+    font-size: 1.4rem !important;
+  }
+}
