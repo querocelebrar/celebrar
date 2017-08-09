@@ -135,6 +135,7 @@ $('#form-age').submit(function(event) {
       $('#uniq-' + counter).append(emoji);
 
       generateBreakableLeftMessage(++counter);
+
       Typed.new('#uniq-' + counter, {
         strings: ["^500 Qual é o motivo da sua comemoração? ^500 \n Formatura ^500 \n Aniversário ^500 \n Confraternização ^500 \n Outros (Celebrando a vidaaaa!)"],
         typeSpeed: typingSpeed,
@@ -156,8 +157,12 @@ $('#form-age').submit(function(event) {
   });
 });
 
-// Dropdown trigger
-document.getElementById('party-reason').addEventListener('change', function() {
+$('#form-reason').submit(function(event) {
+  reasonAction(event);
+});
+
+// Reason function
+function reasonAction(event) {
   event.preventDefault();
 
   // Hide input bar and get the input value
@@ -217,6 +222,11 @@ document.getElementById('party-reason').addEventListener('change', function() {
       });
     }
   });
+}
+
+// Dropdown trigger
+document.getElementById('party-reason').addEventListener('change', function(event) {
+  reasonAction(event);
 });
 
 $('#form-date').submit(function(event) {

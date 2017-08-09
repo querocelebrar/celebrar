@@ -153,6 +153,7 @@ html {
 }
 
 .input-bar-input-container {
+  display: flex;
   float: left;
   width: 75%;
 }
@@ -305,8 +306,11 @@ html {
   .chat-container {
     padding-top: 65px !important;
   }
-}
 
+  .chat-message {
+    white-space: pre-wrap;
+  }
+}
 
 @media screen and (max-width: 320px) {
   .chat-message {
@@ -319,5 +323,9 @@ html {
 
   form input {
     font-size: 1.4rem !important;
+  }
+
+  form select {
+    width: 190px;
   }
 }
