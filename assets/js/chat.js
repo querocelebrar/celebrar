@@ -156,7 +156,8 @@ $('#form-age').submit(function(event) {
   });
 });
 
-$('#form-reason').submit(function(event) {
+// Dropdown trigger
+document.getElementById('party-reason').addEventListener('change', function() {
   event.preventDefault();
 
   // Hide input bar and get the input value
