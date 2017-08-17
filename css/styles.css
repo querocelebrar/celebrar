@@ -1,184 +1,212 @@
-@import url("https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700,800");
-@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900");
-#ComoFunciona {
-  height: 80vh;
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+@font-face {
+  font-family: "Calafia";
+  src: url("../fonts/Calafia-Regular.otf"); }
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif; }
+
+.container {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto; }
+
+#Header {
   width: 100%;
-  text-align: center; }
-  #ComoFunciona #ComoFuncionaHeader {
-    font-size: 2.5rem;
-    margin-top: -25px; }
-  #ComoFunciona #ComoFuncionaContainer #CardContainer {
+  height: 65px;
+  background-color: white; }
+  #Header #HeaderContainer {
+    height: 100%;
     display: flex;
     justify-content: space-between;
-    text-align: center;
-    align-content: center;
-    padding: 0; }
-  #ComoFunciona #ComoFuncionaContainer h2 {
-    font-size: 2.5rem;
-    font-weight: 800; }
-  #ComoFunciona #ComoFuncionaContainer .card {
-    height: 300px;
-    width: 27%;
-    padding: 3%;
-    background: linear-gradient(to bottom, #ff6237 0%, #ff9204 100%); }
-    #ComoFunciona #ComoFuncionaContainer .card img {
-      fill: white !important; }
-    #ComoFunciona #ComoFuncionaContainer .card .card-title {
-      font-size: 1.8rem;
-      color: white;
-      text-transform: uppercase; }
-    #ComoFunciona #ComoFuncionaContainer .card p {
-      font-size: 1.2rem;
-      color: white; }
-
-#Comecando {
-  min-height: 100vh;
-  width: 100%;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  background-color: #221E22;
-  color: white; }
-  #Comecando #ComecandoContainer {
-    padding: 5%; }
-    #Comecando #ComecandoContainer #ComecandoHeader {
-      font-size: 2.5rem; }
-    #Comecando #ComecandoContainer #ComecandoCardContainer {
-      display: flex;
-      justify-content: space-between;
-      align-content: center;
-      color: #221E22; }
-      #Comecando #ComecandoContainer #ComecandoCardContainer .comecandoCard {
-        padding: 2%;
-        width: 45%;
-        background: white; }
-      #Comecando #ComecandoContainer #ComecandoCardContainer p {
-        text-align: left;
-        margin-bottom: 55px;
-        font-size: 1.2rem; }
-      #Comecando #ComecandoContainer #ComecandoCardContainer #ComecandoCollapse dl {
-        border-radius: 8px;
-        overflow: hidden; }
-      #Comecando #ComecandoContainer #ComecandoCardContainer #ComecandoCollapse dl dt {
-        background-color: transparent;
-        border-bottom: solid 1px rgba(0, 0, 0, 0.3);
-        border-top: solid 1px rgba(255, 255, 255, 0.1);
-        color: black;
-        cursor: pointer;
-        padding: 10px 10px 10px 30px;
-        position: relative; }
-      #Comecando #ComecandoContainer #ComecandoCardContainer #ComecandoCollapse dd {
-        background-color: transparent;
-        color: rgba(0, 0, 0, 0.8);
-        display: none;
-        border: solid 1px #e7e7e7;
-        margin: 0;
-        padding: 10px;
-        text-align: left; }
-      #Comecando #ComecandoContainer #ComecandoCardContainer #ComecandoCollapse .fechado::after, #Comecando #ComecandoContainer #ComecandoCardContainer #ComecandoCollapse .aberto::after {
-        content: "\25c2";
-        display: table;
-        font-size: 2em;
-        left: 2%;
-        line-height: 50px;
-        position: absolute;
-        text-shadow: 0 -1px #111;
-        top: -3px;
-        -webkit-transition: all .3s ease-in-out;
-        -moz-transition: all .3s ease-in-out;
-        -o-transition: all .3s ease-in-out;
-        transition: all .3s ease-in-out; }
-      #Comecando #ComecandoContainer #ComecandoCardContainer #ComecandoCollapse .fechado::after {
-        -webkit-transform: rotate(-90deg);
-        -moz-transform: rotate(-90deg);
-        -ms-transform: rotate(-90deg);
-        -o-transform: rotate(-90deg);
-        transform: rotate(-90deg); }
-      #Comecando #ComecandoContainer #ComecandoCardContainer #ComecandoCollapse .aberto::after {
-        -webkit-transform: rotate(-180deg);
-        -moz-transform: rotate(-180deg);
-        -ms-transform: rotate(-180deg);
-        -o-transform: rotate(-180deg);
-        transform: rotate(-180deg); }
-    #Comecando #ComecandoContainer #ComecandoFooter p {
-      margin-top: 100px; }
-
-#Planejando {
-  padding: 0;
-  margin: 0;
-  min-height: 90vh;
-  background: #F44E3F; }
-  #Planejando #PlanejandoHeader {
-    text-align: center;
-    margin: 0px;
-    padding: 50px; }
-    #Planejando #PlanejandoHeader h2 {
-      font-size: 2.5em;
-      color: white; }
-  #Planejando #PlanejandoContainer {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
     align-items: center; }
-    #Planejando #PlanejandoContainer p {
-      text-align: center;
-      font-size: 1.3em;
-      margin: 0;
-      margin-bottom: 50px; }
-    #Planejando #PlanejandoContainer h3 {
-      font-size: 2em;
-      color: white; }
+    #Header #HeaderContainer #Menu {
+      color: #4f4f4f;
+      display: flex; }
+      #Header #HeaderContainer #Menu .menuItem {
+        height: 100%;
+        font-size: 12pt;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding-left: 10px;
+        padding-right: 10px; }
 
-#QuantoCusta {
-  padding: 0;
-  margin: 0;
-  min-height: 70vh;
-  text-align: center;
-  background: #F44E3F; }
-  #QuantoCusta #QuantoCustaHeader {
-    margin: 0;
-    padding: 0; }
-    #QuantoCusta #QuantoCustaHeader h2 {
-      margin: 0;
-      padding: 70px;
-      font-size: 2.5em;
-      color: white; }
-  #QuantoCusta #QuantoCustaContainer {
+#Banner {
+  width: 100%;
+  height: 50vh;
+  min-height: 50vh;
+  background: url("../assets/imgs/background-banner.png");
+  position: static; }
+  #Banner #BannerContainer {
+    height: 66%;
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    padding-bottom: 100px; }
-    #QuantoCusta #QuantoCustaContainer p {
-      font-size: 1.3em;
-      margin: 0;
-      padding: 50px; }
-    #QuantoCusta #QuantoCustaContainer h2 {
-      font-size: 2.5em;
-      color: white; }
-    #QuantoCusta #QuantoCustaContainer #QuantoCustaCTA {
-      background-color: #2E2D2A;
+    padding: 30px; }
+    #Banner #BannerContainer #MainText {
+      font-family: 'Calafia', 'Lato', sans-serif;
+      font-size: 61pt;
+      color: #ff7127; }
+      #Banner #BannerContainer #MainText span {
+        color: #414141; }
+    #Banner #BannerContainer #DescriptionText {
+      font-size: 14pt;
+      font-weight: 300;
+      color: #515151;
+      text-align: center; }
+    #Banner #BannerContainer #BannerButton {
+      background-color: #ff7127;
+      padding: 15px 30px 15px 30px;
+      border-radius: 30px;
+      text-transform: uppercase;
       color: white;
-      font-size: 16px;
-      min-width: 190px;
-      padding: 0 40px;
-      min-height: 65px;
-      height: 65px;
-      line-height: 65px;
-      width: 80px; }
-      #QuantoCusta #QuantoCustaContainer #QuantoCustaCTA:hover {
-        color: #ff6237;
-        background-color: #fff; }
+      cursor: pointer; }
+      #Banner #BannerContainer #BannerButton a {
+        text-decoration: none;
+        color: white; }
+  #Banner #Notebook {
+    width: 100%;
+    text-align: center; }
 
-#Seguranca {
-  padding: 0;
-  margin: 0;
-  min-height: 60vh; }
-
-#Footer {
-  min-height: 30vh;
-  display: flex;
-  justify-content: center;
-  background: black; }
+#MainPage {
+  margin-top: 200px;
+  margin-bottom: 50px; }
+  #MainPage #MainPageContainer #Steps {
+    display: flex; }
+    #MainPage #MainPageContainer #Steps .stepItem {
+      width: 33%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding-right: 20px; }
+      #MainPage #MainPageContainer #Steps .stepItem:last-child {
+        padding-right: 0; }
+      #MainPage #MainPageContainer #Steps .stepItem .stepNumber {
+        width: 45px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #d4d4d4;
+        font-size: 20pt;
+        border-radius: 50px;
+        border: 1px solid #d4d4d4; }
+      #MainPage #MainPageContainer #Steps .stepItem .stepTitle {
+        font-size: 15pt;
+        color: #515151;
+        margin-top: 20px;
+        margin-bottom: 20px; }
+      #MainPage #MainPageContainer #Steps .stepItem .stepDescription {
+        font-size: 12pt;
+        color: #515151;
+        text-align: center; }
+  #MainPage #MainPageContainer #StartingWork {
+    margin-top: 105px;
+    display: flex;
+    justify-content: space-between; }
+    #MainPage #MainPageContainer #StartingWork #Board {
+      width: 60%;
+      display: flex;
+      flex-wrap: wrap;
+      padding-right: 50px; }
+      #MainPage #MainPageContainer #StartingWork #Board .box {
+        width: 50%;
+        padding: 20px;
+        border: 1px solid #e2e2e2;
+        box-sizing: border-box;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        #MainPage #MainPageContainer #StartingWork #Board .box .title {
+          font-size: 18pt; }
+        #MainPage #MainPageContainer #StartingWork #Board .box .description {
+          font-size: 11pt; }
+        #MainPage #MainPageContainer #StartingWork #Board .box .readMore {
+          font-size: 11pt;
+          color: #ff7127;
+          margin-top: 20px;
+          cursor: pointer; }
+          #MainPage #MainPageContainer #StartingWork #Board .box .readMore:hover {
+            text-decoration: underline; }
+      #MainPage #MainPageContainer #StartingWork #Board .firstBox {
+        border-right: 0;
+        border-bottom: 0; }
+      #MainPage #MainPageContainer #StartingWork #Board .lastBox {
+        border-left: 0;
+        border-top: 0; }
+    #MainPage #MainPageContainer #StartingWork #BoardDescription {
+      width: 40%;
+      color: #515151;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      #MainPage #MainPageContainer #StartingWork #BoardDescription #Title {
+        font-size: 18pt; }
+      #MainPage #MainPageContainer #StartingWork #BoardDescription #Description {
+        font-size: 11pt; }
+      #MainPage #MainPageContainer #StartingWork #BoardDescription #Observation {
+        font-size: 9pt;
+        color: #c6c6c6;
+        text-align: right;
+        margin-top: 40px; }
+  #MainPage #MainPageContainer #Planning {
+    display: flex;
+    margin-top: 105px; }
+    #MainPage #MainPageContainer #Planning #Notebook {
+      width: 60%;
+      padding-left: 50px; }
+    #MainPage #MainPageContainer #Planning #PlanningDescription {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      #MainPage #MainPageContainer #Planning #PlanningDescription #Title {
+        font-size: 18pt; }
+      #MainPage #MainPageContainer #Planning #PlanningDescription #Description {
+        font-size: 11pt; }
+  #MainPage #MainPageContainer #HowMuchItCosts {
+    display: flex;
+    margin-top: 105px; }
+    #MainPage #MainPageContainer #HowMuchItCosts #Price {
+      width: 60%;
+      padding-right: 50px;
+      font-size: 79pt;
+      color: #515151;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    #MainPage #MainPageContainer #HowMuchItCosts #PlanningDescription {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      #MainPage #MainPageContainer #HowMuchItCosts #PlanningDescription #Title {
+        font-size: 18pt; }
+      #MainPage #MainPageContainer #HowMuchItCosts #PlanningDescription #Description {
+        font-size: 11pt; }
+  #MainPage #MainPageContainer #Resume {
+    margin-top: 105px;
+    color: #515151;
+    font-size: 18pt;
+    text-align: center; }
+    #MainPage #MainPageContainer #Resume span {
+      font-family: 'Calafia', 'Lato', sans-serif;
+      font-size: 25pt;
+      color: #ff7127; }
+    #MainPage #MainPageContainer #Resume #Button {
+      width: auto !important;
+      background-color: #ff7127;
+      margin-top: 30px;
+      padding: 15px 30px 15px 30px;
+      border-radius: 30px;
+      border: 0;
+      text-transform: uppercase;
+      color: white;
+      cursor: pointer; }
 
 /*# sourceMappingURL=styles.css.map */

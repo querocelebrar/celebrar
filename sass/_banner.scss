@@ -1,0 +1,56 @@
+#Banner {
+    width: 100%;
+    height: 50vh;
+    min-height: 50vh;
+
+    background: url("../assets/imgs/background-banner.png");
+    position: static;
+
+    #BannerContainer {
+        height: 66%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        padding: 30px;
+
+        #MainText {
+            font-family: 'Calafia', 'Lato', sans-serif;  
+            font-size: 61pt;
+            color: $orange;
+            
+            span {
+                color: #414141;            
+            }
+        }
+        
+        #DescriptionText {
+            font-size: 14pt;
+            font-weight: 300;
+            color: #515151;
+            text-align: center;
+        }
+
+        #BannerButton {
+            background-color: $orange;
+            padding: 15px 30px 15px 30px;
+            border-radius: 30px;
+            
+            text-transform: uppercase;
+            color: white;
+
+            cursor: pointer;
+
+            a {
+                text-decoration: none;
+                color: white; 
+            }
+        }
+    }
+    #Notebook {
+        width: 100%;
+        text-align: center;
+    }
+}

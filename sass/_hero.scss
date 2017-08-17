@@ -1,0 +1,32 @@
+@font-face{
+	font-family: "Calafia";
+	src: url('../assets/fonts/Calafia-Regular.otf');
+}
+
+#Hero {
+    min-height: 80vh;
+
+    #FirstHeader {
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+        margin: 20px;
+
+        img {
+            width: 30%;
+        }
+
+        #HeaderMenu {
+            
+            li {
+                display: inline;
+                margin-right: 20px;
+            }
+        }
+    }
+
+
+
+}
+

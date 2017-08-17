@@ -319,7 +319,7 @@ $('#form-amount').submit(function(event) {
       generateLeftMessage(++counter);
       Typed.new('#uniq-' + counter, {
 
-        strings: ["Uma excelente forma de planejarmos tudo é estabelecer um valor mensal que você possa economizar e ir acumulando. ˆ500 Qual valor você imagina que consiga separar todo mês para sua festa?"],
+        strings: ["Uma excelente forma de planejarmos tudo é estabelecer um valor mensal que você possa economizar e ir acumulando. ^500 Qual valor você imagina que consiga separar todo mês para sua festa?"],
         typeSpeed: typingSpeed,
         showCursor: false,
         callback: function () {
@@ -354,7 +354,8 @@ $('#form-money').submit(function(event) {
 
   generateLeftMessage(++counter);
   Typed.new('#uniq-' + counter, {
-    strings: ["Pronto, ^500 já tenho as informações iniciais que preciso. ˆ500 Agora vou precisar de tempo para pensar em algumas sugestões! ^500 Vou te chamar daqui uns dias, ^500 pode ser? ^500 Qual seu email pessoal ou telefone? ^500 (Se quiser, pode me passar os dois...)"],
+    strings: ["Pronto, ^500 já tenho as informações iniciais que preciso. ^500 Agora vou precisar de tempo para pensar em algumas sugestões! ^500 Vou te chamar daqui uns dias, ^500 pode ser? ^500 Qual seu email pessoal?"],
+    // ou telefone? ^500 (Se quiser, pode me passar os dois...)
     typeSpeed: typingSpeed,
     showCursor: false,
     callback: function () {
