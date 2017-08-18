@@ -121,7 +121,8 @@ body {
         position: relative;
         display: flex;
         flex-direction: column;
-        justify-content: center; }
+        justify-content: center;
+        align-items: left; }
         #MainPage #MainPageContainer #StartingWork #Board .box .title {
           font-size: 18pt; }
         #MainPage #MainPageContainer #StartingWork #Board .box .description {
@@ -145,7 +146,7 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: center; }
-      #MainPage #MainPageContainer #StartingWork #BoardDescription #Title {
+      #MainPage #MainPageContainer #StartingWork #BoardDescription #DescriptionTitle {
         font-size: 18pt; }
       #MainPage #MainPageContainer #StartingWork #BoardDescription #Description {
         font-size: 11pt; }
