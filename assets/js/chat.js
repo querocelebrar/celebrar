@@ -5,6 +5,18 @@ var typingSpeed = -25;
 // All the HTML elements loaded?
 document.addEventListener('DOMContentLoaded', function() {
 
+        // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDtaj6AuQj4DIXeegcIMkUkDH2llTiPE78",
+      authDomain: "querocelebrar-9e5e9.firebaseapp.com",
+      databaseURL: "https://querocelebrar-9e5e9.firebaseio.com",
+      projectId: "querocelebrar-9e5e9",
+      storageBucket: "querocelebrar-9e5e9.appspot.com",
+      messagingSenderId: "111841037176"
+  };
+  firebase.initializeApp(config);
+  var database = firebase.database();
+      
   // Scroll to the top of the page when page refresh
   $("html, body").animate({scrollTop: 0}, 100);
 
@@ -241,7 +253,8 @@ $('#form-date').submit(function(event) {
       month = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
 
   generateRightMessage(++counter);
-  $('#uniq-' + counter).text("dia " + date.getDay() + ' de ' + month[date.getMonth() + 1] + ' de ' + date.getFullYear() + '.');
+
+  $('#uniq-' + counter).text("dia " + date.getDay() + ' de ' + month[date.getMonth()] + ' de ' + date.getFullYear() + '.');
 
   scrollScreen();
 
@@ -429,6 +442,18 @@ $('#form-email').submit(function(event) {
                 + ' Por volta de ' + messages[15]
                 + ' Planejo gastar ' + messages[18]
                 + ' Meu email é ' + messages[20];
+
+              var obj = {
+                Nome: messages[3],
+                Idade: messages[6],
+                Motivo: messages[9],
+                Data: messages[12],
+                Capacidade: messages[15],
+                Financas: messages[18],
+                Email: messages[20] 
+              }
+
+              firebase.database().ref('leads/').push(obj);
 
               // Send email with all the conversation history to the admin
               $.ajax({
