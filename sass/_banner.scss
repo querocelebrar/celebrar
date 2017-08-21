@@ -24,6 +24,17 @@
             span {
                 color: #414141;            
             }
+
+            
+            @media only screen and (max-width : 1200px) { font-size: 61pt; }
+            
+            @media only screen and (max-width : 979px) { font-size: 45pt; }
+            
+            @media only screen and (max-width : 767px) { font-size: 30pt; }
+            
+            @media only screen and (max-width : 480px) { font-size: 23pt; }
+            
+            @media only screen and (max-width : 320px) { font-size: 18pt; }
         }
         
         #DescriptionText {
@@ -31,6 +42,16 @@
             font-weight: 300;
             color: #515151;
             text-align: center;
+
+            @media only screen and (max-width : 1200px) { font-size: 14pt; }
+            
+            @media only screen and (max-width : 979px) { font-size: 12pt; }
+            
+            @media only screen and (max-width : 767px) { font-size: 10pt; }
+            
+            @media only screen and (max-width : 480px) { font-size: 10pt; }
+            
+            @media only screen and (max-width : 320px) { font-size: 10pt; }
         }
 
         #BannerButton {
@@ -47,10 +68,26 @@
                 text-decoration: none;
                 color: white; 
             }
+
+            @media only screen and (max-width : 1200px) { padding: 15px 30px 15px 30px; border-radius: 30px; font-size: 12pt; }
+            
+            @media only screen and (max-width : 979px) { padding: 15px 30px 15px 30px; border-radius: 30px; font-size: 11pt; }
+            
+            @media only screen and (max-width : 767px) { padding: 15px 30px 15px 30px; border-radius: 10px; font-size: 10pt; }
+            
+            @media only screen and (max-width : 480px) { padding: 15px 30px 15px 30px; border-radius: 10px; font-size: 8pt;}
+            
+            @media only screen and (max-width : 320px) { padding: 15px 30px 15px 30px; border-radius: 10px; font-size: 7pt;}
         }
     }
     #Notebook {
         width: 100%;
         text-align: center;
+
+        img {
+            @media only screen and (max-width : 480px) { width: 70%; }
+            
+            @media only screen and (max-width : 320px) { width: 60%; }
+        }
     }
 }

@@ -1,9 +1,13 @@
 #MainPage {
     margin-top: 200px;
     margin-bottom: 50px; // remove this
+    @media only screen and (max-width : 767px) { margin-top: 120px; }
+
     #MainPageContainer {
         #Steps {
             display: flex;
+            
+            @media only screen and (max-width : 767px) { flex-direction: column; }
 
             .stepItem {
                 width: 33%;
@@ -13,6 +17,8 @@
                 align-items: center;
 
                 padding-right: 20px;
+
+                @media only screen and (max-width : 767px) { width: 100%; margin-top: 30px;}
 
                 &:last-child {
                     padding-right: 0;
@@ -30,7 +36,7 @@
                     font-size: 20pt;
 
                     border-radius: 50px;
-                    border: 1px solid #d4d4d4;
+                    border: 1px solid #d4d4d4; 
                 }
 
                 .stepTitle {
@@ -52,6 +58,7 @@
             margin-top: 105px;
             display: flex;
             justify-content: space-between;
+            @media only screen and (max-width : 767px) { flex-direction: column; }
 
             #Board {
                 width: 60%;
@@ -59,9 +66,12 @@
                 flex-wrap: wrap;
 
                 padding-right: 50px;
+                @media only screen and (max-width : 767px) { padding: 0; flex-direction: column; width: 100%;}
+
                 .box{
                     width: 50%;
-                
+                    @media only screen and (max-width : 767px) { width: 100%; }
+
                     padding: 20px;
                     border: 1px solid #e2e2e2;
                     box-sizing: border-box;
@@ -95,16 +105,19 @@
                 .firstBox {
                     border-right: 0;
                     border-bottom: 0;
+                    @media only screen and (max-width : 767px) { border: 1px solid #e2e2e2; }
                 }
 
                 .lastBox {
                     border-left: 0;
                     border-top: 0;
+                    @media only screen and (max-width : 767px) { border: 1px solid #e2e2e2; }
                 }
             }
 
             #BoardDescription {
                 width: 40%;
+                @media only screen and (max-width : 767px) { width: 100%; margin-top: 50px; }
                 color: #515151;
 
                 display: flex;
@@ -130,14 +143,17 @@
 
         #Planning {
             display: flex;
+            @media only screen and (max-width : 767px) { flex-direction: column; margin-top: 50px; align-items: center;}
 
             margin-top: 105px;
             #Notebook {
                 width: 60%;
                 padding-left: 50px;
+                @media only screen and (max-width : 767px) { width: 70%; padding-left: 0; }                 
             }
 
             #PlanningDescription {
+                @media only screen and (max-width : 767px) { width: 100%; }
                 width: 40%;
                 display: flex;
                 flex-direction: column;
@@ -155,11 +171,14 @@
 
         #HowMuchItCosts {
             display: flex;
+            
+            @media only screen and (max-width : 767px) { flex-direction: column; margin-top: 50px;}
 
             margin-top: 105px;
             #Price {
                 width: 60%;
                 padding-right: 50px;
+                @media only screen and (max-width : 767px) { width: 100%; font-size: 40px; padding: 0;}
 
                 font-size: 79pt;
                 color: #515151;
@@ -174,6 +193,7 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                @media only screen and (max-width : 767px) { width: 100%; margin-top: 30px;}
 
                 #Title {
                     font-size: 18pt;

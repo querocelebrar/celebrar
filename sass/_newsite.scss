@@ -18,12 +18,26 @@ body {
 
     background-color: white;
 
+    @media only screen and (max-width : 1200px) { height: 40px; }
+    
+    @media only screen and (max-width : 979px) { height: 35px; }
+    
+    @media only screen and (max-width : 767px) { height: 30px; }
+    
+    @media only screen and (max-width : 480px) { height: 20px; }
+    
+    @media only screen and (max-width : 320px) { height: 15px; }
+
     #HeaderContainer {
         height: 100%;
 
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        img {
+            height: 100%;
+        }
 
         #Menu {
             color: $menu-text-color;
@@ -38,8 +52,20 @@ body {
 
                 padding-left: 10px; 
                 padding-right: 10px; 
+
+                @media only screen and (max-width : 1200px) { font-size: 12pt; }
+                
+                @media only screen and (max-width : 979px) { font-size: 10pt; }
+                
+                @media only screen and (max-width : 767px) { font-size: 8pt; }
+                
+                @media only screen and (max-width : 480px) { font-size: 6pt; }
+                
+                @media only screen and (max-width : 320px) { font-size: 5pt; }
+            
             }
         }
+        
     }
 }
 
