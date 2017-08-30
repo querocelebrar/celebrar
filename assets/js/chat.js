@@ -149,7 +149,7 @@ $('#form-age').submit(function(event) {
       generateBreakableLeftMessage(++counter);
 
       Typed.new('#uniq-' + counter, {
-        strings: ["^500 Qual é o motivo da sua comemoração? ^500 \n Formatura ^500 \n Aniversário ^500 \n Confraternização ^500 \n Outros (Celebrando a vidaaaa!)"],
+        strings: ["^500 Qual é o motivo da sua comemoração?"],
         typeSpeed: typingSpeed,
         showCursor: false,
         callback: function () {
@@ -184,7 +184,7 @@ function reasonAction(event) {
       messages = [
         "OPAA, profissional novo na área?!!", 
         "aaahaaa uhuuuuu o " + userName + " eu vou comer seu boloo!!!! kkkkkk", 
-        "Confraternização??? Não esque da sua assistente pessoal aqui ta???", 
+        "Confraternização??? Não esquece da sua assistente pessoal aqui ta???", 
         "Isso, vamos celebrar a VIDAA!!!! kkkkkk"
       ],
       emojis = [

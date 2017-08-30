@@ -25,122 +25,144 @@
     	<meta name="theme-color" content="#FF9205">
 	</head>
 
-<body>
-	<div id="Header">
-		<div id="HeaderContainer" class="container">
-			<img src="../assets/imgs/logo.png"/>
-			<div id="Menu">
-				<div class="menuItem">Sobre</div>
-				<div class="menuItem">Quero Celebrar</div>
-			</div>
-		</div>
-	</div>
-	<div id="Banner">
-		<div id="BannerContainer" class="container">
-			<div id="MainText">
-				Oi, vamos <span>celebrar</span>?
-			</div>
-			<div id="DescriptionText">
-				Organize a sua festa com a gente! <br/>
-				Garantimos a sua diversão :)
-			</div>
-			<a href="./chat" id="BannerButton" class="button">SIM, QUERO CELEBAR!</a>
-		</div>
-		<div id="Notebook">
-			<img src="../assets/imgs/notebook.png"/>
-		</div>
-	</div>
-	<div id="MainPage">
-    	<div id="MainPageContainer" class="container">
-			<div id="Steps">
-				<div class="stepItem">
-					<div class="stepNumber">1</div>
-					<div class="stepTitle">Assim que chegar</div>
-					<div class="stepDescription">
-						Você vai conversar com a Nina.
-					</div>
-				</div>
-				<div class="stepItem">
-					<div class="stepNumber">2</div>
-					<div class="stepTitle">Depois da conversa</div>
-					<div class="stepDescription">
-						Pensaremos um planejamento inicial para que sua festa 
-						seja feita da melhor maneira possível.
-					</div>
-				</div>
-				<div class="stepItem">
-					<div class="stepNumber">3</div>
-					<div class="stepTitle">Por fim</div>
-					<div class="stepDescription">
-						Enviaremos o planejamento a você e vamos para 
-						segunda parte.
-					</div>
+	<body>
+		<div id="Header">
+			<div id="HeaderContainer" class="container">
+				<img src="../assets/imgs/logo.png"/>
+				<div id="Menu">
+					<a href="#Steps"> <div class="menuItem">Como funciona</div> </a>
+					<a href="./chat"> <div class="menuItem">Quero Celebrar</div> </a>
 				</div>
 			</div>
-			<div id="StartingWork">
-				<div id="Board">
-					<div class="box firstBox">
-						<div class="title">
-							PAGAMENTOS<br>MENSAIS
+		</div>
+		<div id="Banner">
+			<div id="BannerContainer" class="container">
+				<div id="MainText">
+					Oi, vamos <span>celebrar</span>?
+				</div>
+				<div id="DescriptionText">
+					Organize a sua festa com a gente! <br/>
+					Garantimos a sua diversão :)
+				</div>
+				<a href="./chat" id="BannerButton" class="button">SIM, QUERO CELEBAR!</a>
+			</div>
+			<div id="Notebook">
+				<img src="../assets/imgs/notebook.png"/>
+			</div>
+		</div>
+		<div id="MainPage">
+			<div id="MainPageContainer" class="container">
+				<div id="Steps">
+					<div class="stepItem">
+						<div class="stepNumber">1</div>
+						<div class="stepTitle">Assim que chegar</div>
+						<div class="stepDescription">
+							Você vai conversar com a Nina.
 						</div>
-						<div class="description">
-							<br/>
-							Nosso principal foco no inicio, nele você define 
-							um valor que você pode ir pagando mensalmente para 
-							ir acumulando para sua festa.
-						</div>
-						<!-- <div class="readMore">
-							+ Leia Mais
-						</div> -->
 					</div>
+					<div class="stepItem">
+						<div class="stepNumber">2</div>
+						<div class="stepTitle">Depois da conversa</div>
+						<div class="stepDescription">
+							Pensaremos um planejamento inicial para que sua festa 
+							seja feita da melhor maneira possível.
+						</div>
+					</div>
+					<div class="stepItem">
+						<div class="stepNumber">3</div>
+						<div class="stepTitle">Por fim</div>
+						<div class="stepDescription">
+							Enviaremos o planejamento a você e vamos para 
+							segunda parte.
+						</div>
+					</div>
+				</div>
+				<div id="StartingWork">
+					<div id="Board">
+						<div class="box firstBox">
+							<div class="title">
+								PAGAMENTOS<br>MENSAIS
+							</div>
+							<div class="description">
+								<br/>
+								Nosso principal foco no inicio, nele você define 
+								um valor que você pode ir pagando mensalmente para 
+								ir acumulando para sua festa.
+							</div>
+							<div class="readMore" id="readMorePagamentos">
+								+ Leia Mais
+							</div>
+						</div>
 
-					<div class="box">
-						<div class="title">
-								RIFAS<br>ELETRÔNICAS
+						<div class="box">
+							<div class="title">
+									RIFAS<br>ELETRÔNICAS
+							</div>
+							<div class="description">
+								<br/>
+									Nossa plataforma vai disponibilizar, mensalmente,
+									rifas eletrônicas para que você possa vender e 
+									rentabilizar ainda mais sua festa. 
+							</div>
+							<div class="readMore" id="readMoreRifas">
+								+ Leia Mais
+							</div>
 						</div>
-						<div class="description">
-							<br/>
-								Nossa plataforma vai disponibilizar, mensalmente,
-								rifas eletrônicas para que você possa vender e 
-								rentabilizar ainda mais sua festa. 
-						</div>
-						<div class="readMore" id="readMoreRifas">
-							+ Leia Mais
-						</div>
-					</div>
 
-					<div class="box">
-						<div class="title">
-							VAQUINHAS
+						<div class="box">
+							<div class="title">
+								VAQUINHAS
+							</div>
+							<div class="description">
+								<br/>
+								Dentro da plataforma você poderá definir objetivos 
+								e convidar pessoas de sua lista para te ajudar a 
+								alcançar eles. 
+							</div>
+							<div class="readMore" id="readMoreVaquinhas">
+								+ Leia Mais
+							</div>
 						</div>
-						<div class="description">
-							<br/>
-							Dentro da plataforma você poderá definir objetivos 
-							e convidar pessoas de sua lista para te ajudar a 
-							alcançar eles. 
+									
+						<div class="box lastBox">
+							<div class="title">
+								VENDA DE CONVITES
+							</div>
+							<div class="description">
+								<br/>
+								Sempre acontece de você chamar algum convidado 
+								e ele ter algum agregado para levar né? 
+							</div>
+							<div class="readMore" id="readMoreVendas">
+								+ Leia Mais
+							</div>
 						</div>
-						<div class="readMore" id="readMoreVaquinhas">
-							+ Leia Mais
-						</div>
+						
 					</div>
-								
-					<div class="box lastBox">
-						<div class="title">
-							VENDA DE CONVITES
-						</div>
-						<div class="description">
-							<br/>
-							Sempre acontece de você chamar algum convidado 
-							e ele ter algum agregado para levar né? 
-						</div>
-						<div class="readMore" id="readMoreVendas">
-							+ Leia Mais
-						</div>
+					<div id="BoardDescription">
+							<div id="DescriptionTitle">PAGAMENTOS<br>MENSAIS</div>
+							<div id="Description">
+									<br/>
+									Nosso principal foco no inicio, nele você define 
+									um valor que você pode ir pagando mensalmente para 
+									ir acumulando para sua festa.
+									<br/><br/>
+									Nessa fase a intenção de nossa plataforma é te 
+									auxiliar a captar, organizar, controlar e 
+									principalmente potencializar os recursos 
+									financeiros da sua festa.
+							</div>
+							<div id="Observation">
+								É importante deixar claro que nós não cobramos nada por 
+								isso, ou seja, se você definir que pode pagar R$250,00 
+								por mês para sua festa, todo mês serão adicionados 250 
+								reais em sua conta SEM NENHUM DESCONTO ou custo!
+							</div>
 					</div>
-					
 				</div>
-				<div id="BoardDescription">
-						<div id="DescriptionTitle">COMEÇANDO <br/>A PREPARAÇÃO</div>
+				<div id="Planning">
+					<div id="PlanningDescription">
+						<div id="Title">COMEÇANDO <br/>A PREPARAÇÃO</div>
 						<div id="Description">
 								<br/>
 								Assim que fecharmos todo o planejamento com todos os 
@@ -153,63 +175,47 @@
 								principalmente potencializar os recursos 
 								financeiros da sua festa.
 						</div>
-						<div id="Observation">
-							É importante deixar claro que nós não cobramos nada por 
-							isso, ou seja, se você definir que pode pagar R$250,00 
-							por mês para sua festa, todo mês serão adicionados 250 
-							reais em sua conta SEM NENHUM DESCONTO ou custo!
+					</div>
+					<div id="Notebook">
+						<img src="../assets/imgs/notebook.png" width="100%"/>
+					</div>
+				</div>
+				<div id="HowMuchItCosts">
+					<div id="Price">
+						R$0,00
+					</div>
+					<div id="PlanningDescription">
+						<div id="Title">TA, MAS QUANTO CUSTA?</div>
+						<div id="Description">
+								<br/>
+								Não cobramos nenhuma taxa de você pelo serviço. 
+								Toda nossa remuneração vem através dos fornecedores. 
+								<br/><br/>
+								Ou seja, quando você fechar um serviço e autorizar 
+								que nossa plataforma pague o fornecedor com os 
+								recursos de sua conta, vamos realizar o pagamento 
+								e dele será cobrado uma comissão.                        
 						</div>
-				</div>
-			</div>
-			<div id="Planning">
-				<div id="PlanningDescription">
-					<div id="Title">COMEÇANDO <br/>A PREPARAÇÃO</div>
-					<div id="Description">
-							<br/>
-							Assim que fecharmos todo o planejamento com todos os 
-							detalhes como data da festa, numero de convidados e 
-							orçamento financeiro, vamos passar para a fase do 
-							planejamento dos custos e captação dos recursos.
-							<br/><br/>
-							Nessa fase a intenção de nossa plataforma é te 
-							auxiliar a captar, organizar, controlar e 
-							principalmente potencializar os recursos 
-							financeiros da sua festa.
 					</div>
 				</div>
-				<div id="Notebook">
-					<img src="../assets/imgs/notebook.png" width="100%"/>
-				</div>
-			</div>
-			<div id="HowMuchItCosts">
-				<div id="Price">
-					R$0,00
-				</div>
-				<div id="PlanningDescription">
-					<div id="Title">TA, MAS QUANTO CUSTA?</div>
-					<div id="Description">
-							<br/>
-							Não cobramos nenhuma taxa de você pelo serviço. 
-							Toda nossa remuneração vem através dos fornecedores. 
-							<br/><br/>
-							Ou seja, quando você fechar um serviço e autorizar 
-							que nossa plataforma pague o fornecedor com os 
-							recursos de sua conta, vamos realizar o pagamento 
-							e dele será cobrado uma comissão.                        
-					</div>
-				</div>
-			</div>
-			<div id="Resume">
-				Resumindo: </br></br>
-				<span>Você não paga nada para usar o serviço!</span></br></br>
-				Então não perca mais tempo e comece a celebrar</br>
+				<div id="Resume">
+					Resumindo: </br></br>
+					<span>Você não paga nada para usar o serviço!</span></br></br>
+					Então não perca mais tempo e comece a celebrar</br>
 
-				<a href="./chat">
-				    <button id="Button" class="button">
-                		Sim, Quero Celebrar!
-					</button>
-				</a>
+					<a href="./chat">
+						<button id="Button" class="button">
+							Sim, Quero Celebrar!
+						</button>
+					</a>
+				</div>
 			</div>
+		</div>
+		<div id="Footer">
+			<i class="fa fa-facebook-square" aria-hidden="true"></i>
+			<i class="fa fa-envelope" aria-hidden="true"></i>
+			<i class="fa fa-instagram" aria-hidden="true"></i>
+			<i class="fa fa-twitter" aria-hidden="true"></i>
 		</div>
 		<!-- Fim Corpo do site -->
 

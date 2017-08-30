@@ -24,7 +24,8 @@ body {
 	display: flex;
 	justify-content: center;
 
-	background: linear-gradient(to bottom, rgba(255, 146, 4, 1) 0%, rgba(255, 98, 55, 1) 100%);
+	background: #f3f3f3;
+	/*  */
 }
 
 .container { 
@@ -102,7 +103,7 @@ body {
 
 .slogan {
 	font-family: 'Calafia';
-	color: white;
+	color: black;
 	font-size: 10vmax;
 	text-align: center;
 	margin: auto;
@@ -116,7 +117,7 @@ body {
 }
 
 .blackColor{
-	color: #221E22;
+	color:rgba(255, 146, 4, 1);
 }
 
 .button {

@@ -27,6 +27,13 @@ $('#headerButton #talkButton').click(function() {
   $.post('/converse-comigo');
 });
 
+$('#readMorePagamentos').click(function () {
+  document.getElementById('DescriptionTitle').innerHTML = "PAGAMENTOS<br>MENSAIS";
+  document.getElementById('Description').innerHTML = "<br>Nosso principal foco no inicio, nele você define \
+                                                      um valor que você pode ir pagando mensalmente para \
+                                                      ir acumulando para sua festa.";
+});
+
 $('#readMoreRifas').click(function () {
   document.getElementById('DescriptionTitle').innerHTML = "RIFAS ELETRÔNICAS";
   document.getElementById('Description').innerHTML = "<br>Nossa plataforma vai disponibilizar, mensalmente, rifas eletrônicas para que você possa vender e rentabilizar ainda mais sua \

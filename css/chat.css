@@ -152,10 +152,16 @@ html {
   cursor: pointer;
 }
 
+.multiple-buttons {
+  width: auto;
+}
+
 .input-bar-input-container {
   display: flex;
   float: left;
   width: 75%;
+  flex-wrap: wrap;
+
 }
 
 .input-bar-button:hover {
@@ -234,7 +240,7 @@ html {
 
 @media screen and (max-width: 965px) {
   .input-bar-input-container {
-    width: 65%;
+    width: auto;
   }
 
   .input-bar-container {
@@ -248,7 +254,7 @@ html {
   }
 
   .input-bar-input-container {
-    width: 55%;
+    width: auto;
   }
 
   .input-bar-container {
@@ -276,7 +282,13 @@ html {
     font-size: 1rem;
     padding: 0 15px;
     margin-top: 10px;
+    margin-left: 10px;
     line-height: 0;
+  }
+
+  .multiple-buttons {
+    width: 75%;
+    font-size: .8rem;
   }
 
   .input-bar-input {
