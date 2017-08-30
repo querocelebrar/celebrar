@@ -169,36 +169,43 @@ $('#form-age').submit(function(event) {
   });
 });
 
-$('#form-reason').submit(function(event) {
-  reasonAction(event);
-});
+document.getElementById('reasonFormatura').addEventListener('click', reasonEvent);
+document.getElementById('reasonConfraternizacao').addEventListener('click', reasonEvent);
+document.getElementById('reasonAniversario').addEventListener('click', reasonEvent);
+document.getElementById('reasonOutros').addEventListener('click', reasonEvent);
 
-// Reason function
-function reasonAction(event) {
+// Reason buttons events
+function reasonEvent(event) {
   event.preventDefault();
+
+  let reasons = ["Formatura", "Aniversário", "Confraternização", "Outros"];
+
+  let buttonReason = this.innerText;
+  let reasonIndex = 0;
+  reasons.forEach(function(reason, index) { 
+    if (reason.toUpperCase() === buttonReason) { reasonIndex = index; }
+  });
 
   // Hide input bar and get the input value
   $('#input-bar').toggle();
 
-  var reason = document.getElementById("party-reason").selectedIndex,
-      messages = [
-        "OPAA, profissional novo na área?!!", 
-        "aaahaaa uhuuuuu o " + userName + " eu vou comer seu boloo!!!! kkkkkk", 
-        "Confraternização??? Não esquece da sua assistente pessoal aqui ta???", 
-        "Isso, vamos celebrar a VIDAA!!!! kkkkkk"
-      ],
-      emojis = [
-        "<i class='em em-mortar_board'></i>",
-        "<i class='em em-flushed'></i>",
-        "<i class='em em-grimacing'></i>",
-        "<i class='em em-smile'></i>"
-      ],
-      reasons = ["Formatura", "Aniversário", "Confraternização", "Outros"],
-      message = messages[reason],
-      emoji = emojis[reason];
+  let messages = [
+    "OPAA, profissional novo na área?!!", 
+    "aaahaaa uhuuuuu o " + userName + " eu vou comer seu boloo!!!! kkkkkk", 
+    "Confraternização??? Não esquece da sua assistente pessoal aqui ta???", 
+    "Isso, vamos celebrar a VIDAA!!!! kkkkkk"
+  ],
+  emojis = [
+    "<i class='em em-mortar_board'></i>",
+    "<i class='em em-flushed'></i>",
+    "<i class='em em-grimacing'></i>",
+    "<i class='em em-smile'></i>"
+  ],
+  message = messages[reasonIndex],
+  emoji = emojis[reasonIndex];
 
   generateRightMessage(++counter);
-  $('#uniq-' + counter).text(reasons[reason] + '.');
+  $('#uniq-' + counter).text(reasons[reasonIndex] + '.');
 
   scrollScreen();
 
@@ -235,11 +242,6 @@ function reasonAction(event) {
     }
   });
 }
-
-// Dropdown trigger
-document.getElementById('party-reason').addEventListener('change', function(event) {
-  reasonAction(event);
-});
 
 $('#form-date').submit(function(event) {
   event.preventDefault();
