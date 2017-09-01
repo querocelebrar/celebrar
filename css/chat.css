@@ -154,6 +154,7 @@ html {
 
 .multiple-buttons {
   width: auto;
+  margin-right: 10px;
 }
 
 .input-bar-input-container {
@@ -162,6 +163,10 @@ html {
   width: 75%;
   flex-wrap: wrap;
 
+}
+
+.input-bar-multiple-buttons {
+  width: auto;
 }
 
 .input-bar-button:hover {
