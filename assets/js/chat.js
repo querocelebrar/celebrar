@@ -5,8 +5,8 @@ var typingSpeed = -25;
 // All the HTML elements loaded?
 document.addEventListener('DOMContentLoaded', function() {
 
-        // Initialize Firebase
-    var config = {
+  // Initialize Firebase
+  var config = {
       apiKey: "AIzaSyDtaj6AuQj4DIXeegcIMkUkDH2llTiPE78",
       authDomain: "querocelebrar-9e5e9.firebaseapp.com",
       databaseURL: "https://querocelebrar-9e5e9.firebaseio.com",
@@ -369,8 +369,7 @@ $('#form-money').submit(function(event) {
 
   generateLeftMessage(++counter);
   Typed.new('#uniq-' + counter, {
-    strings: ["Pronto, ^500 já tenho as informações iniciais que preciso. ^500 Agora vou precisar de tempo para pensar em algumas sugestões! ^500 Vou te chamar daqui uns dias, ^500 pode ser? ^500 Qual seu email pessoal?"],
-    // ou telefone? ^500 (Se quiser, pode me passar os dois...)
+    strings: ["Pronto, ^500 já tenho as informações iniciais que preciso. ^500 Agora vou precisar de tempo para pensar em algumas sugestões! ^500 Vou te chamar daqui uns dias, ^500 pode ser? ^500 Qual seu email pessoal e telefone pra contato?"],
     typeSpeed: typingSpeed,
     showCursor: false,
     callback: function () {
@@ -396,9 +395,10 @@ $('#form-email').submit(function(event) {
   $('#input-bar').toggle();
 
   var email = $(this).serializeArray()[0].value;
+  var phone = $(this).serializeArray()[1].value;
 
   generateRightMessage(++counter);
-  $('#uniq-' + counter).text(email);
+  $('#uniq-' + counter).text("Meu email é " + email + " e meu telefone é " + phone);
 
   scrollScreen();
 
@@ -443,7 +443,8 @@ $('#form-email').submit(function(event) {
                 + ' Estou planejando no  ' + messages[12]
                 + ' Por volta de ' + messages[15]
                 + ' Planejo gastar ' + messages[18]
-                + ' Meu email é ' + messages[20];
+                + ' Meu email é ' + messages[20]
+                + ' Meu telefone é ' + messages[21]
 
               var obj = {
                 Nome: messages[3],
@@ -452,7 +453,8 @@ $('#form-email').submit(function(event) {
                 Data: messages[12],
                 Capacidade: messages[15],
                 Financas: messages[18],
-                Email: messages[20] 
+                Email: messages[20],
+                Telefone: messages[21] 
               }
 
               firebase.database().ref('leads/').push(obj);
