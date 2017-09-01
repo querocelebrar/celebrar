@@ -369,7 +369,7 @@ $('#form-money').submit(function(event) {
 
   generateLeftMessage(++counter);
   Typed.new('#uniq-' + counter, {
-    strings: ["Pronto, ^500 já tenho as informações iniciais que preciso. ^500 Agora vou precisar de tempo para pensar em algumas sugestões! ^500 Vou te chamar daqui uns dias, ^500 pode ser? ^500 Qual seu email pessoal e telefone pra contato?"],
+    strings: ["Pronto, ^500 já tenho as informações iniciais que preciso. ^500 Agora vou precisar de tempo para pensar em algumas sugestões! ^500 Vou te chamar daqui uns dias, ^500 pode ser? ^500 Qual seu email pessoal?"],
     typeSpeed: typingSpeed,
     showCursor: false,
     callback: function () {
@@ -395,10 +395,10 @@ $('#form-email').submit(function(event) {
   $('#input-bar').toggle();
 
   var email = $(this).serializeArray()[0].value;
-  var phone = $(this).serializeArray()[1].value;
+  // var phone = $(this).serializeArray()[1].value;
 
   generateRightMessage(++counter);
-  $('#uniq-' + counter).text("Meu email é " + email + " e meu telefone é " + phone);
+  $('#uniq-' + counter).text("Meu email é " + email + ".");
 
   scrollScreen();
 
@@ -429,7 +429,9 @@ $('#form-email').submit(function(event) {
             callback: function () {
 
               // Append Emoji
-              $('#uniq-' + counter).append('<a class="chat-link" href="https://www.facebook.com/querocelebrar" target="_blank"><i class="fa fa-facebook-official facebook" aria-hidden="true"></i></a>');
+              $('#uniq-' + counter).append('<a id="linkFacebook" href="http://www.facebook.com/share.php?u=https://querocelebrar.com.br/ajustes/&t=QueroCelebrar" target="_blank"> \
+                                              <i class="fa fa-facebook-official facebook" aria-hidden="true"></i> \
+                                            </a>');
 
               scrollScreen();
 
