@@ -446,7 +446,7 @@ $('#form-email').submit(function(event) {
                 + ' Por volta de ' + messages[15]
                 + ' Planejo gastar ' + messages[18]
                 + ' Meu email é ' + messages[20]
-                + ' Meu telefone é ' + messages[21]
+                // + ' Meu telefone é ' + messages[21]
 
               var obj = {
                 Nome: messages[3],
