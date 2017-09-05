@@ -5,6 +5,15 @@ html {
   box-sizing: border-box;
 }
 
+#shareBtn {
+  cursor: pointer;
+}
+
+#shareBtnSection {
+  display: none;
+  padding: 0 !important;
+}
+
 .typed-cursor {
   display: none;
 }
@@ -123,6 +132,10 @@ html {
 
 .show-form {
   display: block !important;
+}
+
+.show-shareBtn {
+  display: flex;
 }
 
 .input-bar-fixed {

@@ -16,7 +16,15 @@ document.addEventListener('DOMContentLoaded', function() {
   };
   firebase.initializeApp(config);
   var database = firebase.database();
-      
+ 
+  document.getElementById("shareBtn").onclick = function() { 
+    FB.ui({ method: "share", 
+            display: "popup", 
+            href: "https://www.querocelebrar.com.br", 
+            quote: "Já estou nos preparativos por aqui!!! Você precisa vir conhecer e organizar a sua festa. Só não esquece de me convidar ein?!",
+    }, function(response){}); 
+  }
+  
   // Scroll to the top of the page when page refresh
   $("html, body").animate({scrollTop: 0}, 100);
 
@@ -428,10 +436,10 @@ $('#form-email').submit(function(event) {
             showCursor: false,
             callback: function () {
 
+              $('#shareBtn').toggleClass('show-shareBtn');
+
               // Append Emoji
-              $('#uniq-' + counter).append('<a id="linkFacebook" href="http://www.facebook.com/share.php?u=https://querocelebrar.com.br/ajustes/&t=QueroCelebrar" target="_blank"> \
-                                              <i class="fa fa-facebook-official facebook" aria-hidden="true"></i> \
-                                            </a>');
+              // $('#uniq-' + counter).append('');
 
               scrollScreen();
 
