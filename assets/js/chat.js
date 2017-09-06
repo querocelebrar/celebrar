@@ -436,7 +436,7 @@ $('#form-email').submit(function(event) {
             showCursor: false,
             callback: function () {
 
-              $('#shareBtn').toggleClass('show-shareBtn');
+              $('#shareBtnSection').toggleClass('show-shareBtn');
 
               // Append Emoji
               // $('#uniq-' + counter).append('');
