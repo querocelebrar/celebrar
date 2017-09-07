@@ -13,6 +13,13 @@
 		<link rel="stylesheet" type="text/css" href="../css/chat.css">
 		<link rel="stylesheet" type="text/css" href="../css/dropdown.css">
 
+		<!-- Facebook share -->
+		<meta property="og:url"           content="http://www.querocelebrar.com.br/" />
+		<meta property="og:type"          content="website" />
+		<meta property="og:title"         content="Quero Celebrar - Organize sua festa com a gente!" />
+		<meta property="og:description"   content="Já estou nos preparativos por aqui!!! Você precisa vir conhecer e organizar a sua festa. Só não esquece de me convidar ein?!" />
+		<meta property="og:image"         content="https://querocelebrar.com.br/assets/imgs/notebook.png" />
+
 		<!-- Icons -->
 		<script src="https://use.fontawesome.com/4346e7bee0.js"></script>
 
@@ -127,9 +134,13 @@
 					</form>
 				</div>
 			</div>
-			<div id="shareBtnSection" class="chat-container">
-				<p>Compartilhe com seus amigos!</p>
-				<div id="shareBtn" class="fa fa-facebook-official facebook" aria-hidden="true">
+			<div id="shareBtnSection" class="chat-container" style="min-height: auto !important">
+				<!-- <div class="fb-share-button" 
+					data-href="http://www.your-domain.com/your-page.html" 
+					data-layout="button_count"
+					size="large">
+			  </div> -->
+			  <button id="shareBtn" onclick="postToFeed()" style="display:flex;">Compartilhar no facebook!</button>
 			</div>
 		</div>
 		
@@ -148,17 +159,17 @@
 	<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
 
 	<!-- Script facebook -->
-	<script>
+	<div id="fb-root"></div>
+	<!-- <script>
 		window.fbAsyncInit = function() {
 			FB.init({
-			appId            : '2003779176503380',
-			autoLogAppEvents : true,
-			xfbml            : true,
-			version          : 'v2.10'
+			appId      : '266108093885804',
+			xfbml      : true,
+			version    : 'v2.10'
 			});
 			FB.AppEvents.logPageView();
 		};
-		
+
 		(function(d, s, id){
 			var js, fjs = d.getElementsByTagName(s)[0];
 			if (d.getElementById(id)) {return;}
@@ -166,6 +177,32 @@
 			js.src = "https://connect.facebook.net/en_US/sdk.js";
 			fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));
+	</script> -->
+
+    <script src='http://connect.facebook.net/en_US/all.js'></script>
+	<script> 
+		FB.init({appId: "266108093885804", status: true, cookie: true});
+   
+		function postToFeed() {
+   
+		  // calling the API ...
+		  var obj = {
+			method: 'feed',
+			redirect_uri: 'https://www.querocelebrar.com.br/',
+			link: 'https://developers.facebook.com/docs/reference/dialogs/',
+			picture: 'https://querocelebrar.com.br/assets/imgs/notebook.png',
+			name: 'Quero Celebrar!',
+			caption: 'Quero Celebrar! - Organize sua festa com a gente.',
+			description: 'Já estou nos preparativos por aqui!!! Você precisa vir conhecer e organizar a sua festa. Só não esquece de me convidar ein?!.'
+		  };
+   
+		  function callback(response) {
+			document.getElementById('msg').innerHTML = "Post ID: " + response['post_id'];
+		  }
+   
+		  FB.ui(obj, callback);
+		}
+   
 	</script>
 
 	</body>

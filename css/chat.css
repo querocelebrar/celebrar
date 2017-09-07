@@ -135,7 +135,7 @@ html {
 }
 
 .show-shareBtn {
-  display: flex;
+  display: flex !important;
 }
 
 .input-bar-fixed {
