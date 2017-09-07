@@ -197,11 +197,7 @@
 			description: 'Já estou nos preparativos por aqui!!! Você precisa vir conhecer e organizar a sua festa. Só não esquece de me convidar ein?!.'
 		  };
    
-		  function callback(response) {
-			document.getElementById('msg').innerHTML = "Post ID: " + response['post_id'];
-		  }
-   
-		  FB.ui(obj, callback);
+		  FB.ui(obj);
 		}
    
 	</script>
